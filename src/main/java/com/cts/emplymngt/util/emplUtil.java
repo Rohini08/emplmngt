@@ -27,7 +27,8 @@ public class emplUtil {
 	        settings.put("hibernate.connection.username", "root");
 	        settings.put("hibernate.connection.password", "root");
 	        settings.put("hibernate.show_sql", "true");
-	        settings.put("hibernate.hbm2ddl.auto", "create");
+	        settings.put("hibernate.hbm2ddl.auto", "update"); //replace create by update
+	        settings.put("hibernate.enable_lazy_load_no_trans", "true");
 
 	        registryBuilder.applySettings(settings);
 

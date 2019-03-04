@@ -60,6 +60,7 @@ private static emplServiceImpl emplServiceImpl;
 	
 	public List<Employee> getAllEmployee() {
 		// TODO Auto-generated method stub
+		//System.out.print("a");
 		return dao.getAllEmployee();
 	}
 

@@ -25,6 +25,7 @@ public class Employee {
 	@Column(name="salary" )
 	private float salary;
 	
+	Address address=new Address();
 	public String getEmployeeID() {
 		return employeeID;
 	}
@@ -58,5 +59,12 @@ public class Employee {
 	}
 	public Employee() {
 		super();
+	}
+	@Override
+	public String toString() {
+		return "Employee [employeeID=" + employeeID + ", firstName=" + firstName + ", lastName=" + lastName
+				+ ", salary=" + salary + ", getEmployeeID()=" + getEmployeeID() + ", getFirstName()=" + getFirstName()
+				+ ", getLastName()=" + getLastName() + ", getSalary()=" + getSalary() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 	}
 }
